@@ -36,7 +36,7 @@
 </template>
  
 <script> 
-import {detail} from '@/api/base/saasClient' 
+import {detail} from '@/api/base/saasClient'
 export default {  
     name: 'saas-clients-detail',  
     data () {    
