@@ -1,8 +1,8 @@
 <template>  
     <div class="dashboard-container">    
         <div class="app-container">      
-            <el-card shadow="never">            
-                <el-tabs v-model="activeName">                
+            <el-card shadow="never">
+                <el-tabs v-model="activeName">
                     <el-tab-pane label="企业信息" name="first">                  
                         <!--form表单 model:双向绑定的数据对象-->
                         <el-form ref="form" :model="formData" label-width="200px">                    
@@ -49,7 +49,7 @@ export default {  
         detail(id) {      
             detail({id:id}).then(res => {       
                 this.formData = res.data.data        
-                console.log(id)        
+                console.log(id)
                 console.log(this.formData)      
             }) 
         }  
