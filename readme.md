@@ -1,6 +1,6 @@
 # SAAS IRHM 系统
 
-## 运行
+## 运行 npm run dev
 
 ### 1. 安装 nodejs
 
