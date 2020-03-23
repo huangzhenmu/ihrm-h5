@@ -12,23 +12,20 @@ const _import = require('@/router/import_' + process.env.NODE_ENV)
 export default [
   {
     root: true,
-    path: '/employees',
+    path: '/departments',
     component: Layout,
     redirect: 'noredirect',
-    name: 'employees',
+    name: 'departments',
     meta: {
-      title: '员工管理',
+      title: '部门管理',
       icon: 'component'
     },
     children: [
-      {        
-        path: 'details/:id',        
-        component: _import('employees/pages/employees-details'),        
-        // hidden: true // 是否显示在左侧菜单        
-        name: 'details',        
-        meta: {          
-          title: '详情'        
-        }      
+      {
+        path: 'index',
+        component: _import('departments/pages/index'),
+        name: 'departments-index',
+        meta: {title: '部门管理模块', icon: 'component', noCache: true}
       }
     ]
   }
