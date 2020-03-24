@@ -1,11 +1,3 @@
-/*
- * @Author: itcast 
- * @Description: xxx业务模块 
- * @Date: 2018-04-13 16:13:27 
- * @Last Modified by: hans.taozhiwei
- * @Last Modified time: 2018-09-03 11:12:47
- */
-
 import Layout from '@/module-dashboard/pages/layout'
 const _import = require('@/router/import_' + process.env.NODE_ENV)
 
@@ -17,15 +9,22 @@ export default [
     redirect: 'noredirect',
     name: 'departments',
     meta: {
-      title: '部门管理',
-      icon: 'component'
+      title: '组织架构管理',
+      icon: 'architecture'
     },
     children: [
+      // 默认点击了组织架构模块后 跳到第一个子路径
       {
         path: 'index',
         component: _import('departments/pages/index'),
-        name: 'departments-index',
-        meta: {title: '部门管理模块', icon: 'component', noCache: true}
+        name: 'organizations-index',
+        meta: {title: '组织架构', icon: 'architecture', noCache: true}
+      },
+      {
+        path: 'haha',
+        component: _import('departments/pages/haha'),
+        name: 'organizations-haha',
+        meta: {title: 'haha', icon: 'architecture', noCache: true}
       }
     ]
   }
