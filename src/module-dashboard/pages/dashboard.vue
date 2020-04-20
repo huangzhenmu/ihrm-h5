@@ -8,7 +8,7 @@
           </div>
           <div class="headInfoTip">
             <p class="firstChild">早安，HR 专员，祝你开心每一天！</p>
-            <p class="lastChild">HR 专员  |  传智播客-总部-人力资源中心-招聘专员</p>
+            <p class="lastChild">HR 专员  |  hzm-总部-人力资源中心-招聘专员</p>
           </div>
         </div>
         <div class="fr">

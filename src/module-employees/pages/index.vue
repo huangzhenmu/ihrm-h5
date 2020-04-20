@@ -90,7 +90,7 @@ export default {
       counts: '',
       requestParameters:{
         page: 1,
-        size: 10,
+        pagesize: 10,
       }    
     }
   },
